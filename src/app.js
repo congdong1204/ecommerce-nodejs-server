@@ -11,11 +11,10 @@ app.use(morgan('dev')) // Used to log when a request comes
 app.use(helmet()) // secure private information of the server
 app.use(compression()) // downsize of payload, ex. 141kb => 1.4kb
 app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
+// app.use(express.urlencoded({ extended: true }))
+
 // init database
 require('./dbs/init.mongodb')
-// const { checkOverLoad } = require('./helpers/check.connect')
-// checkOverLoad()
 
 // init routes
 app.use('', require('./routes'))
