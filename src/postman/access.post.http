@@ -1,0 +1,14 @@
+@url_dev = http://localhost:3052/v1/api/
+
+### Signup
+POST {{url_dev}}shop/signup
+Content-Type: application/json
+x-api-key: d8671b48d79d0390432aac6b4b77e425bda8d6f489d586acba550828eb6a460aacbe0f32742ca819dc34f2bfdeecc8b79fbfc392b603e7d5b86d6d5ef71f099f
+
+{
+    "name": "Shop Adidas",
+    "email": "adidass2ssgds@gmail.com",
+    "password": "adidas"
+}
+
+
